@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message to Tobin</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="background">
+    <!-- Floating hearts container -->
+    <div id="floating-hearts"></div>
+  </div>
+
+  <div id="image-container">
+    <img src="Image1.png" alt="Image 1" class="side-image left-image">
+    <img src="Image2.png" alt="Image 2" class="side-image right-image">
+  </div>
+
+  <div id="content">
+    <div class="page" id="page1">
+      <p class="greeting">Hi Tobin,</p>
+      <p>I hope you’re doing okay. I’ve put together this interactive interface for you, hoping you might appreciate it. I realize I’ve hurt you, and I want to keep offering my sincerest apology. I’m truly sorry. I know I might be getting on your nerves by now, but please know I’m really trying my best make things right.</p>
+    </div>
+    
+    <div class="page" id="page2" style="display: none;">
+      <p>You mean so much to me, and it’s devastating to know I caused you pain. <i class="fas fa-heart-broken"></i> I regret my actions more than I can put into words.</p>
+    </div>
+    
+    <div class="page" id="page3" style="display: none;">
+      <p class="highlight">Again I keep searching for the right way to apologize, but nothing seems enough.</p>
+    </div>
+
+    <div class="page" id="page4" style="display: none;">
+      <p>I wish I could go back and undo the hurt I caused. <i class="fas fa-clock-rotate-left"></i></p>
+    </div>
+
+    <div class="page" id="page5" style="display: none;">
+      <p class="quote">"You deserve so much kindness and peace."</p>
+    </div>
+
+    <div class="page" id="page6" style="display: none;">
+      <p class="final">I care for you and your feelings so much.<br><strong>Brian ❤️</strong></p>
+    </div>
+
+    <button id="nextButton">Next</button>
+  </div>
+
+  <canvas id="confetti"></canvas>
+
+  <audio id="pageSound" src="https://www.soundjay.com/button/sounds/button-3.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>

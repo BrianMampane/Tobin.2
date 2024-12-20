@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: #020b1fb9; /* Darker gray than before */
+    overflow: hidden;
+    position: relative;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    cursor: url('https://abs.twimg.com/emoji/v2/72x72/2764.png'), auto;
+}
+  
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+  
+/* Floating hearts */
+#floating-hearts {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+  
+.heart {
+    position: absolute;
+    color: #ffb6c1;
+    font-size: 2rem;
+    animation: float 6s infinite ease-in-out;
+}
+  
+@keyframes float {
+    0% {
+      transform: translateY(100vh) translateX(0);
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-10vh) translateX(10px);
+      opacity: 0;
+    }
+}
+  
+#content {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+  
+.page {
+    font-size: 1.4em;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    transform: translateY(20px);
+}
+  
+.greeting {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #e07b8b; /* Much darker pink */
+    font-family: 'Dancing Script', cursive;
+}
+  
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    font-style: italic;
+    color: #e6a0a4; /* Much darker pink */
+}
+  
+button {
+    background-color: white;
+    color: #d16d75; /* Darker pink for button text */
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+  
+button:hover {
+    background-color: #ffb6c1;
+    transform: scale(1.1);
+}
+  
+/* Fade-in Animation */
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+  
+/* Confetti Canvas */
+#confetti {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+  
+/* Image container styling */
+#image-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+  
+/* Style for the side images */
+.side-image {
+    position: absolute;
+    width: 200px; /* Adjust the width as needed */
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7; /* Slight transparency for aesthetics */
+}
+  
+.left-image {
+    left: 20px;
+}
+  
+.right-image {
+    right: 20px;
+}
